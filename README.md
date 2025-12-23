@@ -70,24 +70,26 @@ e-shelf/
 ├── .gitignore
 └── .gitattributes
 ```
-##🚀 Getting Started (Local Setup)
-###1️⃣ Requirements
+---
+
+## 🚀 Getting Started (Local Setup)
+### 1️⃣ Requirements
 PHP 7.4 or newer
 
 MySQL or MariaDB
 
 Apache (via XAMPP / MAMP / WAMP)
 
-###2️⃣ Project Location
+### 2️⃣ Project Location
 Copy the project folder into your local web root, for example:
 
 text
 Copy code
 C:\xampp\htdocs\LibraryProjectprt2\
-###3️⃣ Start Services
+### 3️⃣ Start Services
 Start Apache and MySQL from the XAMPP control panel.
 
-###4️⃣ Create the Database
+### 4️⃣ Create the Database
 Open phpMyAdmin
 
 Go to Import
@@ -96,7 +98,7 @@ Select library_db.sql
 
 Click Go
 
-###5️⃣ Configure Database Connection
+### 5️⃣ Configure Database Connection
 The database configuration file is not tracked in the repository.
 
 Copy:
@@ -112,18 +114,23 @@ $DB_HOST = 'localhost';
 $DB_USER = 'root';
 $DB_PASS = ''; // set a password if applicable
 $DB_NAME = 'library_db';
-###6️⃣ Run the Project
+
+### 6️⃣ Run the Project
 Home page:
 http://localhost/LibraryProjectprt2/index.html
 
 Search & filter page (database-backed):
 http://localhost/LibraryProjectprt2/search_results.php
 
-##💡 Tip:
+---
+
+## 💡 Tip:
 search_results.php is the actual database-powered search page.
 search_results.html is a static/demo version.
 
-##🔌 Backend Endpoints
+---
+
+## 🔌 Backend Endpoints
 search_results.php
 Queries the database and displays filtered book results.
 
@@ -146,7 +153,9 @@ php
 Copy code
 require_once __DIR__ . '/db.php';
 
-##🎯 Project Purpose
+---
+
+## 🎯 Project Purpose
 Practice full web request–response workflows
 
 Apply responsive front-end design principles
@@ -157,5 +166,7 @@ Implement basic search, filtering, and state updates
 
 Follow clean project structure and configuration separation
 
-##📄 License
+---
+
+## 📄 License
 This project is licensed under the MIT License and is intended for educational and portfolio use.
